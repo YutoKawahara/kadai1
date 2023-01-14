@@ -65,6 +65,25 @@ footer {
   background-color: #aaa;
 }
 
+@media screen and (max-width: 1031px) {
+  main {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .step-box {
+    width: 90%;
+    margin-right: 30px;
+    padding: 10px;
+    position: relative;
+  }
+  .step-box:last-child {
+    margin-right: 20px;
+  }
+  .step-box:first-child {
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   main.flex {
     flex-direction: column;
@@ -72,6 +91,9 @@ footer {
   }
   .step-box {
     width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  .step-box:first-child {
     margin: 0 auto 20px auto;
   }
   .step-box:last-child {
